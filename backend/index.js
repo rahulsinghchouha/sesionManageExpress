@@ -30,7 +30,7 @@ app.set('trust proxy', 1) // trust first proxy
 app.use(session({
   secret: 'keyboard cat',
   resave: false,//refresh 
-  saveUninitialized: true, //empty cookie also save
+  saveUninitialized: true, //empty cookie also saveThis, can be useful if you want to create a session for every user, even those who haven’t interacted with the application yet.
   store:MongoStore.create({
     mongoUrl: 'mongodb://localhost:27017/jwtCookie',
   })
