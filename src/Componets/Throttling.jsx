@@ -38,7 +38,7 @@ const Throttling = () => {
                 func.apply(this, args); // Call the function immediately
                 inThrottle = true;
                 setTimeout(() =>
-                (inThrottle = false), limit); // Wait for 'limit' milliseconds 
+                (inThrottle = false), limit); // Wait for 'limit' milliseconds how much time setTimeout is running at that time inThrottle will be true.
             }
         };
     }
