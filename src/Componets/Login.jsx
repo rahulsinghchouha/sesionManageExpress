@@ -11,8 +11,10 @@ const Login = () => {
         console.log('Success password:', values.password);
 
 
-      await  axios.post("http://localhost:4000/user",values, { withCredentials: true });
+   //   await  axios.post("http://localhost:4000/user",values, { withCredentials: true }); //for set the cookies
       
+        await axios.post("http://localhost:4000/customers",values, { withCredentials: true }); //for set the entry
+
 
     };
     const onFinishFailed = (errorInfo) => {
