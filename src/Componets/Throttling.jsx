@@ -4,6 +4,7 @@ import axios from "axios";
 
 const Throttling = () => {
 
+    const [searchInput,setSearchInput] = useState('');
 
     const [data,setData] = useState([]);
 
@@ -52,7 +53,7 @@ const Throttling = () => {
         const newValue = e.target.value;
 
         handleSearch(newValue);
-
+       // setSearchInput(newValue); dont use variable also there
     }
     const onSearch = (values) =>{
         console.log("on search",values);

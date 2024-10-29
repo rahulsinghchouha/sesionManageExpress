@@ -81,10 +81,7 @@ const ShowData = () => {
 //    steps for debouncing
 //   1. create handle search function and in this funcion pass the  input value.
 //   2. in handle search store the debounce this will wait for 3 second on every type 
-
-
-
-
+//   3. then it will call the fetchSearchResult
     return (
         <div>
 
