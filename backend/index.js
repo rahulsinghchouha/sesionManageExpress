@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const dbConnect = require("./utility/dbConnect");
-const {user,token} = require('./controller/user');
+const {user,token,customers,sendData,searchData} = require('./controller/user');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
@@ -38,12 +38,7 @@ app.use(session({
 
   app.post("/user",user);
   app.get("/token",token);
-
-
-
-
-
-
-
-
+  app.post("/customers",customers);
+  app.get("/senddata",sendData);
+  app.get("/searchdata",searchData);
 
