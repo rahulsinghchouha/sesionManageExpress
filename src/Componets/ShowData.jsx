@@ -9,6 +9,7 @@ const ShowData = () => {
     const [searchTerm, setSearchTerm] = useState('');
 
     let response;
+
     // useEffect(() => {
 
     //     async function fetchData() {
@@ -37,7 +38,7 @@ const ShowData = () => {
     const debounce = (func, delay) => {
         // console.log("debounce timer",func,"then - delay",delay);
         let timer;
-        return function (...args) {
+        return function(...args) {
             clearTimeout(timer);
             timer = setTimeout(() => {
                 func.apply(this, args);

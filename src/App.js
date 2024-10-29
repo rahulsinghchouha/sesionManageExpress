@@ -4,6 +4,7 @@ import SignUp from './Componets/SignUp';
 import Login from './Componets/Login';
 import { Flex } from 'antd';
 import ShowData from './Componets/ShowData';
+import Throttling from './Componets/Throttling';
 
 function App() {
   return (
@@ -12,13 +13,14 @@ function App() {
       <Login />
       <br />
       <br />
-
       <SignUp />
-
       <br>
       </br><br/>
-
       <ShowData/>
+      <br/>
+      <br/>
+      <br/>
+      <Throttling/>
     </div>
   );
 }
