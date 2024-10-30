@@ -11,8 +11,8 @@ const Throttling = () => {
 
     //fetch search data
 
-    const fetchSearchResult = async (query,b) => {
-        console.log('Fetching search results for:', query , b);
+    const fetchSearchResult = async (query) => {
+        console.log('Fetching search results for:', query );
         try {
             const response = await axios.get("http://localhost:4000/searchdata", {
                 params: {
