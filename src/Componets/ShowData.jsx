@@ -46,7 +46,6 @@ const ShowData = () => {
         };
     }
 
-
     const fetchSearchResult = async (query) => {
         console.log('Fetching search results for:', query);
         try {
